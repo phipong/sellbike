@@ -75,11 +75,11 @@ export default function Nav() {
   ].map((item) => (
     <li
       key={item.name}
-      className="relative group hover:text-orange-500 cursor-pointer list-none"
+      className="relative group text-center  hover:text-orange-500 cursor-pointer list-none"
        to={item.path} 
       onClick={() => setIsOpen(false)} 
     >
-      <Link to={item.path}>{item.name}</Link>
+      <Link className="w-full group text-xl" to={item.path}>{item.name}</Link>
     </li>
   ))}
 
